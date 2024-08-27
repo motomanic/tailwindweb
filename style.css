@@ -1,0 +1,11 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.icons{
+    color: green;
+    font-size: 2.5rem;
+    font-weight: 600;
+    position: absolute;
+    right : 5%;
+    display: none;
+}

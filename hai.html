@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing cart</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <!-- navbar -->
+        <div class="bg-[url('./image/banner.jpeg)] min-h-screen bg-center bg-cover px-12 py-8 relative">
+
+
+
+
+
+
+          <nav class="flex items-center justify-between w-full h-28  p-4">
+            <!-- Logo -->
+            <img class="w-40 cursor-pointer" src="./image/logo.png" alt="logo">
+          
+            <!-- Mobile Menu Button -->
+            <input type="checkbox" id="menu-toggle" class="hidden">
+            <label for="menu-toggle" class="text-white cursor-pointer md:hidden">
+              <i class='bx bx-menu' id="menuIcons"></i>
+            </label>
+            <label for="menu-toggle" class="text-white cursor-pointer hidden md:block">
+              <i class='bx bx-x' id="closeIcons"></i>
+            </label>
+          
+            <!-- Menu Items -->
+            <ul class="flex-1 hidden md:flex justify-end space-x-5">
+              <li class="list-none cursor-pointer px-5"><a class="text-green-600" href="#">Home</a></li>
+              <li class="list-none cursor-pointer px-5"><a class="text-green-600" href="#">Shop</a></li>
+              <li class="list-none cursor-pointer px-5"><a class="text-green-600" href="#">Blog</a></li>
+              <li class="list-none cursor-pointer px-5"><a class="text-green-600" href="#">Contact</a></li>
+              <li class="list-none cursor-pointer px-5"><a class="text-green-600" href="#">Cart</a></li>
+              <li class="list-none cursor-pointer px-6"><a class="text-white bg-black px-5 py-2 rounded-3xl" href="#">Login</a></li>
+            </ul>
+          
+            <!-- Mobile Menu -->
+            <ul id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-gray-800 flex flex-col items-center justify-center space-y-6 text-center text-white md:hidden hidden">
+              <li class="list-none cursor-pointer"><a class="text-green-600" href="#">Home</a></li>
+              <li class="list-none cursor-pointer"><a class="text-green-600" href="#">Shop</a></li>
+              <li class="list-none cursor-pointer"><a class="text-green-600" href="#">Blog</a></li>
+              <li class="list-none cursor-pointer"><a class="text-green-600" href="#">Contact</a></li>
+              <li class="list-none cursor-pointer"><a class="text-green-600" href="#">Cart</a></li>
+              <li class="list-none cursor-pointer"><a class="text-white bg-black px-5 py-2 rounded-3xl" href="#">Login</a></li>
+            </ul>
+          </nav>
+          
+
+
+
+
+       
+            <div class="text-black mt-40 max-w-lg">
+             <h1 class="text-4xl font-semibold leading-normal after:bg-black after:absolute after:bottom-0">Discover Your Perfect Finds <br> Shop the Latest Trends Now!</h1>
+             <p class="mt-5">Step into Style with Our Exclusive Collection of Trendy Dresses and Shoes. Discover the Hottest Fashion Trends and Elevate Your Wardrobe Today!</p>
+            </div>
+            <div class="mt-10">
+            <a class="bg-yellow-400 rounded-3xl px-6 py-3 font-medium text-white hover:bg-transparent hover:text-black border hover:border-yellow-400 duration-400" href="#">Shop Now</a>
+           </div>
+           <img class=" xl:absolute bottom-0 right-10" src="./image/Nike___Gräddvit_ombréfärgad_huvtröja_i_oversize_och_fleece-Naturlig-removebg-preview.png" alt="main">
+       </div>
+     <!-- featues Sections   -->
+
+     <div class="container py-16 ">
+        <div class="w-10/12 mx-auto  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+         <!-- single feature -->
+          <div class="border border-red-400 rounded-sm px-3 py-6 flex justify-center items-center gap-5">
+            <img src="./image/delivery-van.svg" alt="van" class="w-12 h-12 object-contain">
+            <div>
+                <h4 class="font-medium capilize text-lg">Free Shipping</h4>
+                <p class="text-gray-500 text-sm">order over $19 </p>
+            </div>
+          </div>
+                   <!-- single feature -->
+                   <div class="border border-red-400 rounded-sm px-3 py-6 flex justify-center items-center gap-5 ">
+                    <img src="./image/money-back.svg" alt="van" class="w-12 h-12 object-contain">
+                    <div>
+                        <h4 class="font-medium capilize text-lg">Money Returns</h4>
+                        <p class="text-gray-500 text-sm">7 Days money return </p>
+                    </div>
+                  </div>
+
+                  <!-- single feature -->
+                         <div class="border border-red-400 rounded-sm px-3 py-6 flex justify-center items-center gap-5 ">
+                         <img src="./image/service-hours.svg" alt="van" class="w-12 h-12 object-contain">
+                             <div>
+                                <h4 class="font-medium capilize text-lg">24/7 Support</h4>
+                                 <p class="text-gray-500 text-sm">Customer support </p>
+                  </div>
+               </div>
+        </div>
+     </div>
+
+       <!-- Gents collections -->
+ <div class="flex justify-center mt-8">
+    <h2 class="text-4xl font-semibold text-center border-b-4 border-blue-500 pb-2 inline-block">Gents wears</h2>
+   </div>  
+   <div class="container mx-auto mt-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+       <!-- image1 -->
+       <div class="relative group">
+         <img src="./image/men1.jpeg" alt="img" class="w-full h-68 object-cover">
+         <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+           <button class="bg-white text-black rounded-lg px-4 py-2">Explore More</button>
+         </div>
+       </div>
+       <!-- image2 -->
+       <div class="relative group">
+         <img src="./image/men2.jpeg" alt="img" class="w-full h-full object-cover">
+         <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+           <button class="bg-white text-black rounded-lg px-4 py-2">Explore More</button>
+         </div>
+       </div>
+       <!-- image3 -->
+       <div class="relative group">
+         <img src="./image/men3.jpeg" alt="img" class="w-full h-full object-cover">
+         <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+           <button class="bg-white text-black rounded-lg px-4 py-2">Explore More</button>
+         </div>
+       </div>
+    </div>
+   
+      <!-- Ladies collections -->
+   
+      <div class="flex justify-center mt-8">
+       <h2 class="text-4xl font-semibold text-center border-b-4 border-blue-500 pb-2 inline-block">Gents wears</h2>
+      </div>  
+      <div class="container mx-auto mt-8">
+         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- image1 -->
+          <div class="relative group">
+            <img src="./image/girl1.jpg" alt="img" class="w-full h-68 object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+              <button class="bg-white text-black rounded-lg px-4 py-2">Explore More</button>
+            </div>
+          </div>
+          <!-- image2 -->
+          <div class="relative group">
+            <img src="./image/girl2.jpg" alt="img" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+              <button class="bg-white text-black rounded-lg px-4 py-2">Explore More</button>
+            </div>
+          </div>
+          <!-- image3 -->
+          <div class="relative group">
+            <img src="./image/girl3.jpg" alt="img" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+              <button class="bg-white text-black rounded-lg px-4 py-2">Explore More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product wrapper -->
+         <div class="container pb-16 mt-9">
+            <h2 class="text-4xl font-semibold text-gray-800 uppercase mb-6 mt-5 pl-10	text-red-500">Top new arrivals </h2>
+            
+            <!-- product grid -->
+
+            <div class="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-6">
+              <!-- single Product -->
+              <div class="bg-white shadow rounded overflow-hidden">
+                <!-- product image -->
+                 <div class="relative group">
+                    <img src="./image/new1.jpg" class="w-full">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-red-800 transition">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-red-600 transition">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                    </div>
+                 </div>
+                <!-- product image end -->
+
+                <!-- product content -->
+                 <div class="pt-4 pb-3 px-4">
+                    <a href="#">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-600 hover:text-red-500 transition">Shorts</h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-xl text-primary font-semibold">$6</p>
+                        <p class="text-sm text-gray-400 line-through">$10</p>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="flex gap-1 text-sm text-yellow-400">
+                        <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                        <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                        <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                        <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                        <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                      </div>
+                      <div class="text-xs text-gray-500 ml-3">(150)</div>
+                    </div>                 
+                 </div>
+                 <a href="#" class="block w-full py-1 text-center text-white bg-red-600 border border-red-400 rounded-b hover:text-red-400 hover:bg-white transition">Add to cart</a>
+                <!-- product content end-->
+              </div>
+            <!-- single product end  -->
+
+                            <!-- single Product -->
+                            <div class="bg-white shadow rounded overflow-hidden">
+                              <!-- product image -->
+                               <div class="relative group">
+                                  <img src="./image/product 2.jpeg" class="w-full">
+                                  <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                      <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-red-600 transition">
+                                          <i class="fas fa-search"></i>
+                                      </a>
+                                      <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-red-600 transition">
+                                          <i class="fas fa-heart"></i>
+                                      </a>
+                                  </div>
+                               </div>
+                              <!-- product image end -->
+            
+                              <!-- product content -->
+                               <div class="pt-4 pb-3 px-4">
+                                  <a href="#">
+                                      <h4 class="uppercase font-medium text-xl mb-2 text-gray-600 hover:text-red-500 transition">Japanese t-ees</h4>
+                                  </a>
+                                  <div class="flex items-baseline mb-1 space-x-2">
+                                      <p class="text-xl text-primary font-semibold">$11</p>
+                                      <p class="text-sm text-gray-400 line-through">$25</p>
+                                  </div>
+                                  <div class="flex items-center">
+                                    <div class="flex gap-1 text-sm text-yellow-400">
+                                      <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                                      <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                                      <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                                      <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                                      <span><i class="fa-regular fa-star"></i></span>
+                                    </div>
+                                    <div class="text-xs text-gray-500 ml-3">(400)</div>
+                                  </div>                 
+                               </div>
+                               <a href="#" class="block w-full py-1 text-center text-white bg-red-600 border border-red-400 rounded-b hover:text-red-600 hover:bg-white transition">Add to cart</a>
+                              <!-- product content end-->
+                            </div>
+                          <!-- single product end  -->
+
+                                          <!-- single Product -->
+              <div class="bg-white shadow rounded overflow-hidden">
+                <!-- product image -->
+                 <div class="relative group">
+                    <img src="./image/kidsjacket.png" class="w-full">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-red-800 transition">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-red-600 transition">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                    </div>
+                 </div>
+                <!-- product image end -->
+
+                <!-- product content -->
+                 <div class="pt-4 pb-3 px-4">
+                    <a href="#">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-600 hover:text-red-500 transition">Addidas Collections</h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-xl text-primary font-semibold">$29</p>
+                        <p class="text-sm text-gray-400 line-through">$49</p>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="flex gap-1 text-sm text-yellow-400">
+                        <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                        <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                        <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                        <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                        <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                      </div>
+                      <div class="text-xs text-gray-500 ml-3">(999)</div>
+                    </div>                 
+                 </div>
+                 <a href="#" class="block w-full py-1 text-center text-white bg-red-600 border border-red-400 rounded-b hover:text-red-400 hover:bg-white transition">Add to cart</a>
+                <!-- product content end-->
+              </div>
+            <!-- single product end  -->
+
+                            <!-- single Product -->
+                            <div class="bg-white shadow rounded overflow-hidden">
+                              <!-- product image -->
+                               <div class="relative group">
+                                  <img src="./image/product4.jpeg" class="w-full">
+                                  <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                      <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-red-600 transition">
+                                          <i class="fas fa-search"></i>
+                                      </a>
+                                      <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-red-600 transition">
+                                          <i class="fas fa-heart"></i>
+                                      </a>
+                                  </div>
+                               </div>
+                              <!-- product image end -->
+            
+                              <!-- product content -->
+                               <div class="pt-4 pb-3 px-4">
+                                  <a href="#">
+                                      <h4 class="uppercase font-medium text-xl mb-2 text-gray-600 hover:text-red-500 transition">CK mens&womens</h4>
+                                  </a>
+                                  <div class="flex items-baseline mb-1 space-x-2">
+                                      <p class="text-xl text-primary font-semibold">$19</p>
+                                      <p class="text-sm text-gray-400 line-through">$38</p>
+                                  </div>
+                                  <div class="flex items-center">
+                                    <div class="flex gap-1 text-sm text-yellow-400">
+                                      <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                                      <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                                      <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                                      <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                                      <span><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                                    </div>
+                                    <div class="text-xs text-gray-500 ml-3">(467)</div>
+                                  </div>                 
+                               </div>
+                               <a href="#" class="block w-full py-1 text-center text-white bg-red-600 border border-red-400 rounded-b hover:text-red-400 hover:bg-white transition">Add to cart</a>
+                              <!-- product content end-->
+                            </div>
+                          <!-- single product end  -->
+           </div>
+
+            <!-- product grid end -->
+         </div>
+       <!-- product wrapper end  -->
+
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-8 px-4">
+  <div class="container mx-auto">
+    <div class="flex flex-col md:flex-row md:justify-between">
+      <!-- Logo Section -->
+      <div class="mb-8 md:mb-0 flex items-center">
+        <a href="#" class="flex items-center">
+          <img src="./image/logo.png" alt="Company Logo" class="h-12">
+        </a>
+      </div>
+
+      <!-- Footer sections -->
+      <div class="mb-8 md:mb-0">
+        <h5 class="text-xl font-semibold mb-4">Company</h5>
+        <ul>
+          <li><a href="#" class="hover:text-gray-400">About Us</a></li>
+          <li><a href="#" class="hover:text-gray-400">Careers</a></li>
+          <li><a href="#" class="hover:text-gray-400">Contact</a></li>
+        </ul>
+      </div>
+      <div class="mb-8 md:mb-0">
+        <h5 class="text-xl font-semibold mb-4">Services</h5>
+        <ul>
+          <li><a href="#" class="hover:text-gray-400">Shipping</a></li>
+          <li><a href="#" class="hover:text-gray-400">Returns</a></li>
+          <li><a href="#" class="hover:text-gray-400">Support</a></li>
+        </ul>
+      </div>
+      <div class="mb-8 md:mb-0">
+        <h5 class="text-xl font-semibold mb-4">Follow Us</h5>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-gray-400"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="hover:text-gray-400"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="hover:text-gray-400"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="hover:text-gray-400"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div>
+        <h5 class="text-xl font-semibold mb-4">Subscribe</h5>
+        <form>
+          <input type="email" placeholder="Your email" class="w-full px-3 py-2 mb-4 rounded bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-600">
+          <button type="submit" class="w-full bg-red-600 py-2 rounded hover:bg-red-700">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <!-- Footer bottom -->
+    <div class="text-center mt-8 border-t border-gray-700 pt-4">
+      <p class="text-sm">© 2024 Amazing E-commerce. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<!-- Footer end -->
+
+</body>
+</html>
